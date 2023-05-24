@@ -1,6 +1,9 @@
 import message
 import sys
+from randomResult import *
 action = ["walk", "inventory", "search", "quit"]
+
+Inventory = Objects()
 
 
 class Action:
