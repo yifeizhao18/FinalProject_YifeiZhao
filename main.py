@@ -15,6 +15,7 @@ description...
 ##############################################################################
 # Global Variables & Imports
 from room import * 
+from player import *
 import sys
 
 # create room objects
@@ -26,16 +27,30 @@ OR = Rooms("You are currently at the operating room. There are potential weapons
 psych = Rooms("This is the psychiatry room. This was the department that got shut done first. I wonder why... ")
 exit = Tile("You are one step away from escaping the hospital!! Solve the last puzzle and you can get out of here!! FAST! TIME IS RUNNING OUT.. ", "Congratulations!! You have successfully escaped! Bye!! ")
 
+# create objects for the classes
+User = Player()
 
+# Main
 Playing = True
+# prints the welcome message
 print(entrance.passage)
+# run as long as the player is playing 
 while Playing:
+  # when the user gets to the entrance, print this
   print(entrance.description)
+  # when the user gets to the emergency, print this
   print(emergency.description)
+  # when the user gets to the radiology, print this
   print(radiology.description)
+  # when the user gets to the icu, print this
   print(icu.description)
+  # when the user gets to the OR, print this
   print(OR.description)
+  # when the user gets to the psych, print this
   print(psych.description)
+  # when the user is at the exit, print this
   print(exit.description)
+  # prints the ending message
   print(exit.passage)
-  sys.exit()
+# Main Menu
+User.movements()
