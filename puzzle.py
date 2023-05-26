@@ -1,0 +1,2 @@
+puzzle1 = "Five people were eating apples. A finished before B, but behind C. D finished before E, but behind B. The finishing order is your key to unlock the lock. "
+puzzle2 = "The day before two days after the day before tomorrow is Saturday. What day is it today? "
