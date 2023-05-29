@@ -9,7 +9,7 @@ r1 = "There are zombies heading your way. Knives would be great for battleing wi
 r2 = "There are Type A zombies coming. Knives might not be enough. Do you have a sword to fight with them? "
 
 # created object for the class
-Inventory = Objects()
+option = Alternative()
 
 
 class Player:
@@ -27,39 +27,77 @@ class Player:
     """
     it gives the puzzles that the user has to solve in order to go to the next room
     """
-    Inventory.mainChoice()
+    option.mainChoice()
+    print('\n')
     print(message.lock)
+    print('\n')
     print(puzzle.puzzle1)
+    print('\n')
     clue = input(message.hint)
     print('\n')
     if clue == "yes":
       print(message.clueOrder1)
+      print('\n')
     elif clue == "no":
-      print(message.answerpuzzle)
+      print(message.answer)
+      print('\n')
     else:
       print(message.errorclue)
+      print('\n')
     while True:
       answer = input(message.puzzle)
+      print('\n')
       if answer == "cabde":
         print(message.congrats)
+        print('\n')
         break
       else:
-        clue = input(message.hint)
+        print(message.answerpuzzle)
         print('\n')
-        if clue == "yes":
+        clue2 = input(message.hint)
+        print('\n')
+        if clue2 == "yes":
           print(message.clueOrder2)
-        elif clue == "no":
+          print('\n')
+        elif clue2 == "no":
           print(message.answer)
+          print('\n')
         else:
           print(message.error)
+          print('\n')
     print(message.lock)
-    print(puzzle.puzzle2)
-    clue2 = input(message.hint)
     print('\n')
-    if clue2 == "yes":
+    print(puzzle.puzzle2)
+    print('\n')
+    clue = input(message.hint)
+    print('\n')
+    if clue == "yes":
       print(message.clueDay1)
-    elif clue2 == "no":
-      print(message.answerpuzzle)
+      print('\n')
+    elif clue == "no":
+      print(message.answer)
+      print('\n')
     else:
       print(message.errorclue)
-    while True: 
+      print('\n')
+    while True:
+      answer = input(message.puzzle)
+      print('\n')
+      if answer == "friday":
+        print(message.congrats)
+        print('\n')
+        break
+      else:
+        print(message.answerpuzzle)
+        print('\n')
+        clue2 = input(message.hint)
+        print('\n')
+        if clue2 == "yes":
+          print(message.clueDay2)
+          print('\n')
+        elif clue2 == "no":
+          print(message.answer)
+          print('\n')
+        else: 
+          print(message.error)
+          print('\n')

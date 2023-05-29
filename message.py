@@ -1,5 +1,6 @@
 # the messages that will print to the console
 action = ("What movement would you like to do? ")
+actionFinish = ("Your action is finished. ")
 congrats = ("CONGRATULATIONS!! ")
 coll = ("Do you want to collect it? ")
 answer = ("Sounds good ")
@@ -12,3 +13,4 @@ puzzle = ("What is the answer to this lock? ")
 answerpuzzle = ("That is not the right answer. Please try a different one. ")
 lock = ("This is the puzzle you need to solve in order to escape this room: ")
 clueDay1 = ("The 'day before tomorrow' is today. ")
+clueDay2 = ("The 'day before 2 days after' is one day after. So what day is today if one day after today is Satudrday? ")

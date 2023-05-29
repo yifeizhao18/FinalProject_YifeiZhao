@@ -19,7 +19,7 @@ from player import *
 import sys
 
 # create room objects
-entrance = Tile("You are currently at the entrance of the hospital. There are lots of patients and doctors running around. SEEMS NORMAL... ", "Welcome to the central hospital!! It is a very stormy night. You are here because this hospital got shut done because something abnormal was going on. As a private investigator, you immediately stepped in to investigate. GOOD LUCK!! You will have to escape all of the rooms and be careful to not get killed. ")
+entrance = Tile("You are currently at the entrance of the hospital. There are lots of patients and doctors running around. SEEMS NORMAL... ", "Welcome to the central hospital!! It is a very stormy night. You are here because this hospital got shut done due to something abnormal. As a private investigator, you immediately stepped in to investigate. GOOD LUCK!! You will have to escape all of the rooms and be careful to not get killed. ")
 emergency = Rooms("You are currently at the EMERGENCY ROOM. It used to be a very busy space, but right now, all you can hear is the deadly silence. ")
 icu = Rooms("You are currently at the ICU. All you can hear is the machines beeping. This is also the FIRST room to report the abnormalities in this hospital. BE CAREFUL...")
 radiology = Rooms("You are currently at the radiology toom. There are monstrous imaging machines that makes every corner of the room a great space to hide... ")
@@ -34,23 +34,29 @@ User = Player()
 Playing = True
 # prints the welcome message
 print(entrance.passage)
-# run as long as the player is playing 
-while Playing:
-  # when the user gets to the entrance, print this
-  print(entrance.description)
-  # when the user gets to the emergency, print this
-  print(emergency.description)
-  # when the user gets to the radiology, print this
-  print(radiology.description)
-  # when the user gets to the icu, print this
-  print(icu.description)
-  # when the user gets to the OR, print this
-  print(OR.description)
-  # when the user gets to the psych, print this
-  print(psych.description)
-  # when the user is at the exit, print this
-  print(exit.description)
-  # prints the ending message
-  print(exit.passage)
-# Main Menu
+print('\n')
+# when the user gets to the entrance, print this
+print(entrance.description)
+print('\n')
+User.movements()
+# when the user gets to the emergency, print this
+print(emergency.description)
+User.movements()
+# when the user gets to the radiology, print this
+print(radiology.description)
+User.movements()
+# when the user gets to the icu, print this
+print(icu.description)
+User.movements()
+# when the user gets to the OR, print this
+print(OR.description)
+User.movements()
+# when the user gets to the psych, print this
+print(psych.description)
+User.movements()
+# when the user is at the exit, print this
+print(exit.description)
+User.movements()
+# prints the ending message
+print(exit.passage)
 User.movements()

@@ -33,8 +33,18 @@ class Action:
     print(action.message)
     print('\n')
 
+
+class Alternative:
+  """
   
-  def mainChoice():
+  """
+  def __init__ (choice):
+    """
+    """
+    choice.choice = choice
+
+  
+  def mainChoice(choice):
     """
     it asks for the user's action
     """
@@ -49,12 +59,14 @@ class Action:
       # if the user chose walk as their action, do this
       if actionChoice == "walk":
         Walk.mainChoiceMessages()
+        print(message.actionFinish)
         break
       # if the user chose search as their action, do this
       elif actionChoice == "search":
         Search.mainChoiceMessages()
-        Inventory.randomResult()
+        Inventory.random()
         print('\n')
+        print(message.actionFinish)
         break
       # if the user chose quit as their action, do this
       elif actionChoice == "quit":
@@ -78,6 +90,8 @@ class Action:
           print(f"- {food}")
           print('\n')
         print('\n')
+        print('\n')
+        print(message.actionFinish)
         break
       # if the user chose none of the above, do the following
       else:

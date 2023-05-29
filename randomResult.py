@@ -17,7 +17,7 @@ class Objects:
   """
   created a class for the inventory, food, medicine
   """
-  def __init__ (objects):
+  def __init__ (object):
     """
     empty inventories for the inventory, food, medicine
     """
