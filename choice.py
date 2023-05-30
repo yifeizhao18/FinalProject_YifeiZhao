@@ -64,7 +64,7 @@ class Alternative:
       # if the user chose search as their action, do this
       elif actionChoice == "search":
         Search.mainChoiceMessages()
-        Inventory.random()
+        Inventory.outcome()
         print('\n')
         print(message.actionFinish)
         break

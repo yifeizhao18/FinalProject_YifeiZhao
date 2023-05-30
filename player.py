@@ -23,9 +23,9 @@ class Player:
     self.self = self
     
     
-  def movements (self):
+  def puzzleOrder (self):
     """
-    it gives the puzzles that the user has to solve in order to go to the next room
+    it gives the order puzzle that the user has to solve in order to go to the next room
     """
     option.mainChoice()
     print('\n')
@@ -65,6 +65,12 @@ class Player:
         else:
           print(message.error)
           print('\n')
+
+
+  def puzzleDay (self):
+    """
+    """
+    option.mainChoice()
     print(message.lock)
     print('\n')
     print(puzzle.puzzle2)
@@ -101,3 +107,87 @@ class Player:
         else: 
           print(message.error)
           print('\n')
+
+
+  def puzzleHeight (self):
+    """
+    """
+    option.mainChoice()
+    print(message.lock)
+    print('\n')
+    print(puzzle.puzzle3)
+    print('\n')
+    clue = input(message.hint)
+    print('\n')
+    if clue == "yes":
+      print(message.clueHeight1)
+      print('\n')
+    elif clue == "no":
+      print(message.answer)
+      print('\n')
+    else:
+      print(message.errorclue)
+      print('\n')
+    while True:
+      answer = input(message.puzzle)
+      print('\n')
+      if answer == "r":
+        print(message.congrats)
+        print('\n')
+        break
+      else:
+        print(message.answerpuzzle)
+        print('\n')
+        clue2 = input(message.hint)
+        print('\n')
+        if clue2 == "yes":
+          print(message.clueHeight2)
+          print('\n')
+        elif clue2 == "no":
+          print(message.answer)
+          print('\n')
+        else: 
+          print(message.error)
+          print('\n')
+
+
+  def puzzleAlphabet (self):
+    """
+    """
+    option.mainChoice()
+    print(message.lock)
+    print('\n')
+    print(puzzle.puzzle4)
+    print('\n')
+    clue = input(message.hint)
+    print('\n')
+    if clue == "yes":
+      print(message.clueAlpha1)
+      print('\n')
+    elif clue == "no":
+      print(message.answer)
+      print('\n')
+    else:
+      print(message.errorclue)
+      print('\n')
+    while True:
+      answer = input(message.puzzle)
+      print('\n')
+      if answer == "n":
+        print(message.congrats)
+        print('\n')
+        break
+      else:
+        print(message.answerpuzzle)
+        print('\n')
+        clue2 = input(message.hint)
+        print('\n')
+        if clue2 == "yes":
+          print(message.clueAlpha2)
+          print('\n')
+        elif clue2 == "no":
+          print(message.answer)
+          print('\n')
+        else: 
+          print(message.error)
+          print('\n') 

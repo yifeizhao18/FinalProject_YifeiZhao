@@ -38,25 +38,21 @@ print('\n')
 # when the user gets to the entrance, print this
 print(entrance.description)
 print('\n')
-User.movements()
+User.puzzleOrder()
 # when the user gets to the emergency, print this
 print(emergency.description)
-User.movements()
+User.puzzleDay()
 # when the user gets to the radiology, print this
 print(radiology.description)
-User.movements()
+User.puzzleHeight()
 # when the user gets to the icu, print this
 print(icu.description)
-User.movements()
+User.puzzleAlphabet()
 # when the user gets to the OR, print this
 print(OR.description)
-User.movements()
 # when the user gets to the psych, print this
 print(psych.description)
-User.movements()
 # when the user is at the exit, print this
 print(exit.description)
-User.movements()
 # prints the ending message
 print(exit.passage)
-User.movements()
