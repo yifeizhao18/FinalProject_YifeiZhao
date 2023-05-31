@@ -41,18 +41,26 @@ print('\n')
 User.puzzleOrder()
 # when the user gets to the emergency, print this
 print(emergency.description)
+print('\n')
 User.puzzleDay()
 # when the user gets to the radiology, print this
 print(radiology.description)
+print('\n')
 User.puzzleHeight()
 # when the user gets to the icu, print this
 print(icu.description)
+print('\n')
 User.puzzleAlphabet()
 # when the user gets to the OR, print this
 print(OR.description)
+print('\n')
+User.puzzleDaughter()
 # when the user gets to the psych, print this
 print(psych.description)
+print('\n')
+User.puzzleRelate()
 # when the user is at the exit, print this
 print(exit.description)
+print('\n')
 # prints the ending message
 print(exit.passage)

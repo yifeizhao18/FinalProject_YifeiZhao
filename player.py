@@ -191,3 +191,129 @@ class Player:
         else: 
           print(message.error)
           print('\n') 
+
+
+  def puzzleDaughter (self):
+      """
+      """
+      option.mainChoice()
+      print(message.lock)
+      print('\n')
+      print(puzzle.puzzle5)
+      print('\n')
+      clue = input(message.hint)
+      print('\n')
+      if clue == "yes":
+        print(message.clueDau1)
+        print('\n')
+      elif clue == "no":
+        print(message.answer)
+        print('\n')
+      else:
+        print(message.errorclue)
+        print('\n')
+      while True:
+        answer = input(message.puzzle)
+        print('\n')
+        if answer == "m":
+          print(message.congrats)
+          print('\n')
+          break
+        else:
+          print(message.answerpuzzle)
+          print('\n')
+          clue2 = input(message.hint)
+          print('\n')
+          if clue2 == "yes":
+            print(message.clueDau2)
+            print('\n')
+          elif clue2 == "no":
+            print(message.answer)
+            print('\n')
+          else: 
+            print(message.error)
+            print('\n') 
+
+
+  def puzzleRelate (self):
+      """
+      """
+      option.mainChoice()
+      print(message.lock)
+      print('\n')
+      print(puzzle.puzzle6)
+      print('\n')
+      clue = input(message.hint)
+      print('\n')
+      if clue == "yes":
+        print(message.clueRel1)
+        print('\n')
+      elif clue == "no":
+        print(message.answer)
+        print('\n')
+      else:
+        print(message.errorclue)
+        print('\n')
+      while True:
+        answer = input(message.puzzle)
+        print('\n')
+        if answer == "sisters":
+          print(message.congrats)
+          print('\n')
+          break
+        else:
+          print(message.answerpuzzle)
+          print('\n')
+          clue2 = input(message.hint)
+          print('\n')
+          if clue2 == "yes":
+            print(message.clueRel2)
+            print('\n')
+          elif clue2 == "no":
+            print(message.answer)
+            print('\n')
+          else: 
+            print(message.error)
+            print('\n') 
+
+  
+  def puzzleMonth (self):
+      """
+      """
+      option.mainChoice()
+      print(message.lock)
+      print('\n')
+      print(puzzle.puzzle7)
+      print('\n')
+      clue = input(message.hint)
+      print('\n')
+      if clue == "yes":
+        print(message.clueMon1)
+        print('\n')
+      elif clue == "no":
+        print(message.answer)
+        print('\n')
+      else:
+        print(message.errorclue)
+        print('\n')
+      while True:
+        answer = input(message.puzzle)
+        print('\n')
+        if answer == "m":
+          print(message.congrats)
+          print('\n')
+          break
+        else:
+          print(message.answerpuzzle)
+          print('\n')
+          clue2 = input(message.hint)
+          print('\n')
+          if clue2 == "yes":
+            print(message.clueMon2)
+            print('\n')
+          elif clue2 == "no":
+            print(message.answer)
+            print('\n')
+          else: 
+            print(message.error)
+            print('\n') 
