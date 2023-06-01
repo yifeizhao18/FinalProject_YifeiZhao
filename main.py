@@ -31,7 +31,6 @@ exit = Tile("You are one step away from escaping the hospital!! Solve the last p
 User = Player()
 
 # Main
-Playing = True
 # prints the welcome message
 print(entrance.passage)
 print('\n')
@@ -62,5 +61,7 @@ User.puzzleRelate()
 # when the user is at the exit, print this
 print(exit.description)
 print('\n')
+User.puzzleMonth()
 # prints the ending message
 print(exit.passage)
+sys.exit()
