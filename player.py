@@ -96,6 +96,7 @@ class Player:
     print('\n')
     print(puzzle.puzzle2)
     print('\n')
+    # asks if the user wants a clue
     clue = input(message.hint)
     print('\n')
     while True:
@@ -217,6 +218,7 @@ class Player:
     print('\n')
     print(puzzle.puzzle4)
     print('\n')
+    # asks if the user wants a hint
     clue = input(message.hint)
     print('\n')
     while True:
@@ -254,10 +256,12 @@ class Player:
           if clue2 == "yes":
             print(message.clueAlpha2)
             print('\n')
+            break
           # if not, do the following
           elif clue2 == "no":
             print(message.answer)
             print('\n')
+            break
           # else, do the following and repeat the question
           else: 
             print(message.error)
@@ -275,6 +279,7 @@ class Player:
     print('\n')
     print(puzzle.puzzle5)
     print('\n')
+    # asks if the user wants a hint
     clue = input(message.hint)
     print('\n')
     while True: 
@@ -282,10 +287,12 @@ class Player:
       if clue == "yes":
         print(message.clueDau1)
         print('\n')
+        break
       # if not, do the following
       elif clue == "no":
         print(message.answer)
         print('\n')
+        break
       # else, do the following and repeat the question
       else:
         print(message.errorclue)
@@ -310,10 +317,12 @@ class Player:
           if clue2 == "yes":
             print(message.clueDau2)
             print('\n')
+            break
           # if not, do the following
           elif clue2 == "no":
             print(message.answer)
             print('\n')
+            break
           # else, do the following and repeat the question
           else: 
             print(message.error)
@@ -331,6 +340,7 @@ class Player:
     print('\n')
     print(puzzle.puzzle6)
     print('\n')
+    # asks if the user wants a hint
     clue = input(message.hint)
     print('\n')
     while True:
@@ -338,10 +348,12 @@ class Player:
       if clue == "yes":
         print(message.clueRel1)
         print('\n')
+        break
       # if they do not, do the following
       elif clue == "no":
         print(message.answer)
         print('\n')
+        break
       # else, do the following and repeat the question 
       else:
         print(message.errorclue)
@@ -367,10 +379,12 @@ class Player:
           if clue2 == "yes":
             print(message.clueRel2)
             print('\n')
+            break
           # if not, do the following
           elif clue2 == "no":
             print(message.answer)
             print('\n')
+            break
           # else, do the following and repeat the question
           else: 
             print(message.error)
@@ -391,34 +405,48 @@ class Player:
     # asks if the user wants a hint
     clue = input(message.hint)
     print('\n')
-    # if the user wants a hint, do the following
-    if clue == "yes":
-      print(message.clueMon1)
-      print('\n')
-    elif clue == "no":
-      print(message.answer)
-      print('\n')
-    else:
-      print(message.errorclue)
-      print('\n')
+    while True: 
+      # if the user wants a hint, do the following
+      if clue == "yes":
+        print(message.clueMon1)
+        print('\n')
+        break
+      # if they do not, do the following
+      elif clue == "no":
+        print(message.answer)
+        print('\n')
+        break
+      # else, do the following and repeat the question
+      else:
+        print(message.errorclue)
+        print('\n')
     while True:
+      # asks for the answer
       answer = input(message.puzzle)
       print('\n')
+      # if they answered correctly, do the following
       if answer == "m":
         print(message.congrats)
         print('\n')
         break
+      # if they did not, do the following
       else:
         print(message.answerpuzzle)
         print('\n')
         clue2 = input(message.hint)
         print('\n')
-        if clue2 == "yes":
-          print(message.clueMon2)
-          print('\n')
-        elif clue2 == "no":
-          print(message.answer)
-          print('\n')
-        else: 
-          print(message.error)
-          print('\n') 
+        while True: 
+          # if they want a hint, do the following
+          if clue2 == "yes":
+            print(message.clueMon2)
+            print('\n')
+            break
+          # if they do not want a hint, do the following
+          elif clue2 == "no":
+            print(message.answer)
+            print('\n')
+            break
+          # else, do the following and repeat the question
+          else: 
+            print(message.error)
+            print('\n') 
