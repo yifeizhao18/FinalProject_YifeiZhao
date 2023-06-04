@@ -36,10 +36,11 @@ class Action:
 
 class Alternative:
   """
-  
+  this class is for the possible actions the user can take in a room
   """
   def __init__ (choice):
     """
+    choice
     """
     choice.choice = choice
 
