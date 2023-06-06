@@ -4,10 +4,6 @@ import message
 import puzzle
 from choice import *
 
-# each result variable represents a result
-r1 = "There are zombies heading your way. Knives would be great for battleing with them. "
-r2 = "There are Type A zombies coming. Knives might not be enough. Do you have a sword to fight with them? "
-
 # created object for the class
 option = Alternative()
 
@@ -35,10 +31,10 @@ class Player:
     print('\n')
     print(puzzle.puzzle1)
     print('\n')
-    # asks if the user wants a clue
-    clue = input(message.hint)
-    print('\n')
-    while True: 
+    while True:
+      # asks if the user wants a clue
+      clue = input(message.hint)
+      print('\n')
       # if they want a clue, do the following
       if clue == "yes":
         print(message.clueOrder1)
@@ -66,9 +62,9 @@ class Player:
       else:
         print(message.answerpuzzle)
         print('\n')
-        clue2 = input(message.hint)
-        print('\n')
         while True:
+          clue2 = input(message.hint)
+          print('\n')
           # if they want a clue, do the follwoing
           if clue2 == "yes":
             print(message.clueOrder2)
@@ -97,9 +93,9 @@ class Player:
     print(puzzle.puzzle2)
     print('\n')
     # asks if the user wants a clue
-    clue = input(message.hint)
-    print('\n')
     while True:
+      clue = input(message.hint)
+      print('\n')
       # if they want a hint, do the following
       if clue == "yes":
         print(message.clueDay1)
@@ -127,9 +123,9 @@ class Player:
       else:
         print(message.answerpuzzle)
         print('\n')
-        clue2 = input(message.hint)
-        print('\n')
         while True: 
+          clue2 = input(message.hint)
+          print('\n')
           # if they do want a hint, do the following
           if clue2 == "yes":
             print(message.clueDay2)
@@ -157,10 +153,10 @@ class Player:
     print('\n')
     print(puzzle.puzzle3)
     print('\n')
-    # asks if the user wants a hint
-    clue = input(message.hint)
-    print('\n')
     while True:
+      # asks if the user wants a hint
+      clue = input(message.hint)
+      print('\n')
       # if they want a hint, do the following
       if clue == "yes":
         print(message.clueHeight1)
@@ -188,9 +184,9 @@ class Player:
       else:
         print(message.answerpuzzle)
         print('\n')
-        clue2 = input(message.hint)
-        print('\n')
         while True: 
+          clue2 = input(message.hint)
+          print('\n')
           # if the user wants a hint, do the following
           if clue2 == "yes":
             print(message.clueHeight2)
@@ -218,10 +214,10 @@ class Player:
     print('\n')
     print(puzzle.puzzle4)
     print('\n')
-    # asks if the user wants a hint
-    clue = input(message.hint)
-    print('\n')
     while True:
+      # asks if the user wants a hint
+      clue = input(message.hint)
+      print('\n')
       # if they want a hint, do the following
       if clue == "yes":
         print(message.clueAlpha1)
@@ -249,9 +245,9 @@ class Player:
       else:
         print(message.answerpuzzle)
         print('\n')
-        clue2 = input(message.hint)
-        print('\n')
         while True: 
+          clue2 = input(message.hint)
+          print('\n')
           # if they want a hint, do the following
           if clue2 == "yes":
             print(message.clueAlpha2)
@@ -279,10 +275,10 @@ class Player:
     print('\n')
     print(puzzle.puzzle5)
     print('\n')
-    # asks if the user wants a hint
-    clue = input(message.hint)
-    print('\n')
     while True: 
+      # asks if the user wants a hint
+      clue = input(message.hint)
+      print('\n')
       # if they want a hint, do the following
       if clue == "yes":
         print(message.clueDau1)
@@ -310,9 +306,9 @@ class Player:
       else:
         print(message.answerpuzzle)
         print('\n')
-        clue2 = input(message.hint)
-        print('\n')
         while True: 
+          clue2 = input(message.hint)
+          print('\n')
           # if they want a hint, do the following
           if clue2 == "yes":
             print(message.clueDau2)
@@ -340,10 +336,10 @@ class Player:
     print('\n')
     print(puzzle.puzzle6)
     print('\n')
-    # asks if the user wants a hint
-    clue = input(message.hint)
-    print('\n')
     while True:
+      # asks if the user wants a hint
+      clue = input(message.hint)
+      print('\n')
       # if they want a hint, do the following
       if clue == "yes":
         print(message.clueRel1)
@@ -371,10 +367,10 @@ class Player:
       else:
         print(message.answerpuzzle)
         print('\n')
-        # asks if the user wants a hint
-        clue2 = input(message.hint)
-        print('\n')
         while True: 
+          # asks if the user wants a hint
+          clue2 = input(message.hint)
+          print('\n')
           # if the user wants a hint, do the following
           if clue2 == "yes":
             print(message.clueRel2)
@@ -402,10 +398,10 @@ class Player:
     print('\n')
     print(puzzle.puzzle7)
     print('\n')
-    # asks if the user wants a hint
-    clue = input(message.hint)
-    print('\n')
     while True: 
+      # asks if the user wants a hint
+      clue = input(message.hint)
+      print('\n')
       # if the user wants a hint, do the following
       if clue == "yes":
         print(message.clueMon1)
@@ -433,9 +429,9 @@ class Player:
       else:
         print(message.answerpuzzle)
         print('\n')
-        clue2 = input(message.hint)
-        print('\n')
         while True: 
+          clue2 = input(message.hint)
+          print('\n')
           # if they want a hint, do the following
           if clue2 == "yes":
             print(message.clueMon2)

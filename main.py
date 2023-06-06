@@ -32,6 +32,13 @@ User = Player()
 
 # Main
 # prints the welcome message
+try:
+  with open ("external.txt", "w") as file:
+    file.write(f"Welcome! {entrance.passage}")
+except:
+  print("File Exception")
+else:
+  pass
 print(entrance.passage)
 print('\n')
 # when the user gets to the entrance, print this
