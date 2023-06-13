@@ -10,7 +10,10 @@
 # Version: 001
 ##############################################################################
 """
-description...
+This is a text based escape room. 
+It is set in a hospital.
+The user needs to solve the puzzles in order to go to the next room. 
+Throughout their journey, they can get randomized objects. 
 """
 ##############################################################################
 # Global Variables & Imports

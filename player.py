@@ -19,7 +19,7 @@ class Player:
     self.self = self
     
     
-  def puzzleOrder (self):
+  def puzzleOrder(self):
     """
     it gives the order puzzle.
     once it is completed, the user can move on to the next room
@@ -81,7 +81,7 @@ class Player:
             print('\n')
 
 
-  def puzzleDay (self):
+  def puzzleDay(self):
     """
     it gives the order puzzle.
     once it is completed, the user can move on to the next room
@@ -142,7 +142,7 @@ class Player:
             print('\n')
 
 
-  def puzzleHeight (self):
+  def puzzleHeight(self):
     """
     it gives the order puzzle.
     once it is completed, the user can move on to the next room
@@ -203,7 +203,7 @@ class Player:
             print('\n')
 
 
-  def puzzleAlphabet (self):
+  def puzzleAlphabet(self):
     """
     it gives the order puzzle.
     once it is completed, the user can move on to the next room
@@ -264,7 +264,7 @@ class Player:
             print('\n') 
 
 
-  def puzzleDaughter (self):
+  def puzzleDaughter(self):
     """
     it gives the order puzzle.
     once it is completed, the user can move on to the next room
@@ -325,7 +325,7 @@ class Player:
             print('\n') 
 
 
-  def puzzleRelate (self):
+  def puzzleRelate(self):
     """
     it gives the order puzzle.
     once it is completed, the user can move on to the next room
@@ -387,7 +387,7 @@ class Player:
             print('\n') 
 
   
-  def puzzleMonth (self):
+  def puzzleMonth(self):
     """
     it gives the order puzzle.
     once it is completed, the user can move on to the next room
