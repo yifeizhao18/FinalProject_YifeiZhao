@@ -54,6 +54,9 @@ class Alternative:
       print("Possible actions: ")
       for key in action:
         print(f"- {key}")
+      print('\n')
+      print("Please press enter everytime after your input ")
+      print('\n')
       # asks for the action
       actionChoice = (input(message.action))
       print('\n')

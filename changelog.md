@@ -36,3 +36,8 @@ add - room objects
 add - player object
 add - inventory object
 add - alternative object
+
+v4.0
+Name: Minor Changes Based on the Testing
+fix - radiology room
+add - "press enter after your input"
